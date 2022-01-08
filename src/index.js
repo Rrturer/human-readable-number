@@ -3,7 +3,7 @@ module.exports = function toReadable (number) {
             'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];   
     let ten = ['twenty','thirty', 'forty','fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
     let n = 0;   
-    if (number < 20) return ones[number];   
+    if (number < 20) return one[number];   
     if (number < 100) {     
         n = number % 10;  
         return ten[Math.floor(number/10)-2] + " " + (n > 0 ? one[n] : "");   
