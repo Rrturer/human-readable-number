@@ -6,7 +6,7 @@ module.exports = function toReadable (number) {
     if (number < 20) return one[number];   
     if (number < 100) {     
         n = number % 10;  
-        return ten[Math.floor(number/10)-2] + " " + (n > 0 ? one[n] : "");   
+        return ten[Math.floor(number/10)-2] + "" + (n > 0 ? one[n] : "");   
     }
     if (number < 1000) {    
          return one[Math.floor(number/100)] + " hundred " + (number % 100 > 0 ? toReadable(number % 100) : "");   
